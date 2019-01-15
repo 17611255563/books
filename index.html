@@ -62,6 +62,55 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-git" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/15/git/" class="article-date">
+  <time datetime="2019-01-15T07:30:31.000Z" itemprop="datePublished">2019-01-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/01/15/git/">git</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-git-checkout-b-dev-origin-dev————–-gt-本地同步创建码云分支"><a href="#1-git-checkout-b-dev-origin-dev————–-gt-本地同步创建码云分支" class="headerlink" title="1.git checkout -b dev origin/dev————–&gt;本地同步创建码云分支"></a>1.git checkout -b dev origin/dev————–&gt;本地同步创建码云分支</h2><h2 id="2-git-branch-master-——–-gt-本地创建自己的分支"><a href="#2-git-branch-master-——–-gt-本地创建自己的分支" class="headerlink" title="2.git branch master ——–&gt;本地创建自己的分支"></a>2.git branch master ——–&gt;本地创建自己的分支</h2><h2 id="3-git合并"><a href="#3-git合并" class="headerlink" title="3.git合并"></a>3.git合并</h2><h4 id="3-1-在自己的分支上做提交"><a href="#3-1-在自己的分支上做提交" class="headerlink" title="3.1.在自己的分支上做提交"></a>3.1.在自己的分支上做提交</h4><pre><code>git add ./ -------&gt; 提交所有的代码
+git commit -m &apos;注释&apos;
+</code></pre><h4 id="3-2-切换到dev分支"><a href="#3-2-切换到dev分支" class="headerlink" title="3.2.切换到dev分支"></a>3.2.切换到dev分支</h4><pre><code>git checkout dev
+</code></pre><h4 id="3-3-获取最新代码"><a href="#3-3-获取最新代码" class="headerlink" title="3.3.获取最新代码"></a>3.3.获取最新代码</h4><pre><code>git pull origin dev
+</code></pre><h4 id="3-4-合并自己的分支itcast1到dev分支"><a href="#3-4-合并自己的分支itcast1到dev分支" class="headerlink" title="3.4.合并自己的分支itcast1到dev分支"></a>3.4.合并自己的分支itcast1到dev分支</h4><pre><code>git merge itcast1
+</code></pre><h4 id="3-5-提交到服务器gitee-com"><a href="#3-5-提交到服务器gitee-com" class="headerlink" title="3.5.提交到服务器gitee.com"></a>3.5.提交到服务器gitee.com</h4><pre><code>git push origin dev
+</code></pre><h2 id="4-直到所有人都合并完成"><a href="#4-直到所有人都合并完成" class="headerlink" title="4.直到所有人都合并完成"></a>4.直到所有人都合并完成</h2><h4 id="4-1-获取最新代码"><a href="#4-1-获取最新代码" class="headerlink" title="4.1.获取最新代码"></a>4.1.获取最新代码</h4><pre><code>git pull origin dev
+</code></pre><h4 id="4-2-切换到自己的分支"><a href="#4-2-切换到自己的分支" class="headerlink" title="4.2.切换到自己的分支"></a>4.2.切换到自己的分支</h4><pre><code>git checkout itcast1
+</code></pre><h4 id="4-3-合并dev分到到自己的分支"><a href="#4-3-合并dev分到到自己的分支" class="headerlink" title="4.3.合并dev分到到自己的分支"></a>4.3.合并dev分到到自己的分支</h4><pre><code>git merge dev
+</code></pre><h2 id="5-git历史记录"><a href="#5-git历史记录" class="headerlink" title="5.git历史记录"></a>5.git历史记录</h2><pre><code>git reflog--------------&gt;查看历史版本
+git reset 版本号--------&gt;回到指定的版本号
+git status--------------&gt;查看文件变化
+git checkout -- 文件名--&gt;恢复指定的文件
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/01/15/git/" data-id="cjqxfzynm0000g3s6f74rcenk" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Docker简介" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/01/14/Docker简介/" class="article-date">
@@ -205,7 +254,7 @@ Docker for Windows
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/14/Docker简介/" data-id="cjqxbooxq0001pns6z0o4oytj" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/01/14/Docker简介/" data-id="cjqxfzynz0002g3s6k5xxlhlp" class="article-share-link">Share</a>
       
       
     </footer>
@@ -250,7 +299,7 @@ Docker for Windows
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/14/hello-world/" data-id="cjqxbooxg0000pns61mc84vl2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/01/14/hello-world/" data-id="cjqxfzynp0001g3s6slzxfayw" class="article-share-link">Share</a>
       
       
     </footer>
@@ -289,6 +338,10 @@ Docker for Windows
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/01/15/git/">git</a>
+          </li>
         
           <li>
             <a href="/2019/01/14/Docker简介/">Docker简介</a>
